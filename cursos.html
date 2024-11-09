@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Centro Universitário Veritas - Cursos</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+            font-size: 1rem; /* Usando rem para o tamanho da fonte */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #4097d1;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem; /* Usando rem */
+        }
+        nav {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a8dc2;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #3674c5;
+        }
+        .menu-hamburguer {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem; /* Usando rem */
+            display: flex;
+            flex-direction: column;
+        }
+        .menu-hamburguer div {
+            background-color: #fff;
+            height: 3px;
+            margin: 4px 0;
+            width: 25px;
+        }
+        .container {
+            padding: 2rem;
+            flex: 1; /* Permite que o conteúdo principal cresça */
+        }
+        .formulario {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 2rem; /* Espaçamento extra na parte inferior */
+        }
+        .formulario label {
+            display: block;
+            margin-top: 1rem;
+        }
+        .formulario input, .formulario select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem; /* Usando rem */
+        }
+        .formulario button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 1rem; /* Usando rem */
+            transition: background-color 0.3s ease; /* Transição suave */
+        }
+        .formulario button:hover {
+            background-color: #555; /* Cor de fundo ao passar o mouse */
+        }
+        .mensagem-erro {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none; /* Inicialmente escondido */
+        }
+        .mensagem-sucesso {
+            color: green;
+            font-size: 1rem;
+            margin-top: 1rem;
+            display: none; /* Inicialmente escondido */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4097d1;
+        }
+        .course {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .course img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .course-details {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <header>
+        <h1>Cursos - CENTRO UNIVERSITÁRIO VERITAS</h1>
+        <div class="menu-hamburguer" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="menu">
+            <a href="file:///C:/Users/Eduardo%20Felipe/Desktop/formulario/formulario.html#">Início</a>
+            <a href="file:///C:/Users/Eduardo%20Felipe/Desktop/formulario/universidade.html#cursos">Sobre</a>
+            <a href="file:///C:/Users/Eduardo%20Felipe/Desktop/formulario/cursos.html">Cursos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+</header>
+
+<div class="container">
+    <h2>Cursos Oferecidos</h2>
+
+    <div class="course">
+        <h3>Medicina</h3>
+        <img src="medico filha da puta.jpg" alt="Curso de Medicina">
+        <p>O curso de Medicina forma profissionais capacitados para atuar na prevenção, diagnóstico e tratamento de doenças, com foco na saúde integral do paciente.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 6 anos<br>
+            <strong>Custo:</strong> R$ 2.500,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Medicina forma profissionais capacitados para atuar na prevenção, diagnóstico e tratamento de doenças, com foco na saúde integral do paciente. Os alunos aprendem sobre anatomia, fisiologia, farmacologia e diversas especialidades médicas, além de desenvolver habilidades práticas em laboratórios e estágios em hospitais. O curso enfatiza a importância da ética e da humanização no atendimento ao paciente, preparando os futuros médicos para enfrentar os desafios da profissão. Os graduados podem atuar em clínicas, hospitais, consultórios e também têm a opção de seguir especializações em áreas como cirurgia, pediatria, psiquiatria, entre outras.
+        </div>
+    </div>
+
+    <div class="course">
+        <h3>Direito</h3>
+        <img src="dereitinho.jpg" alt="Curso de Direito">
+        <p>O curso de Direito proporciona uma formação sólida nas áreas do Direito Civil, Penal, Trabalhista e Constitucional, preparando o aluno para atuar em diversas áreas do mercado jurídico.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 5 anos<br>
+            <strong>Custo:</strong> R$ 1.800,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Direito proporciona uma formação sólida nas áreas do Direito Civil, Penal, Trabalhista e Constitucional, preparando o aluno para atuar em diversas áreas do mercado jurídico. Os estudantes aprendem a interpretar e aplicar a legislação, desenvolver habilidades de argumentação e análise crítica, além de participar de simulações de julgamentos e práticas em clínicas jurídicas. O curso também aborda temas contemporâneos, como direitos humanos, ética profissional e mediação de conflitos. Os graduados podem seguir carreiras como advogados, juízes, promotores, defensores públicos, consultores jurídicos e muito mais. 
+        </div>
+    </div>
+
+    <div class="course">
+        <h3>Ciência da Computação</h3>
+        <img src="comPUTAdor.jpg" alt="Curso de Ciência da Computação">
+        <p>O curso de Ciência da Computação desenvolve habilidades em programação, algoritmos e desenvolvimento de software, preparando o aluno para o mercado de tecnologia.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 4 anos<br>
+            <strong>Custo:</strong> R$ 1.600,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Ciência da Computação desenvolve habilidades em programação, algoritmos e desenvolvimento de software, preparando o aluno para o mercado de tecnologia. Os estudantes aprendem diversas linguagens de programação, estruturas de dados, inteligência artificial, segurança da informação e desenvolvimento de aplicativos. O curso inclui projetos práticos e parcerias com empresas de tecnologia, proporcionando experiências reais e estágios. Os graduados podem atuar como desenvolvedores de software, analistas de sistemas, engenheiros de dados, especialistas em segurança cibernética, entre outras funções. 
+        </div>
+    </div>
+
+    <div class="course">
+        <h3>Medicina Veterinária</h3>
+        <img src="cavalo.jpg" alt="Curso de Medicina Veterinária">
+        <p>O curso de Medicina Veterinária capacita profissionais para cuidar da saúde animal, atuando na prevenção e tratamento de doenças em animais de companhia e de produção.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 5 anos<br>
+            <strong>Custo:</strong> R$ 2.200,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Medicina Veterinária capacita profissionais para cuidar da saúde animal, atuando na prevenção e tratamento de doenças em animais de companhia e de produção. Os alunos estudam anatomia, fisiologia, farmacologia e patologia veterinária, além de desenvolver habilidades práticas em clínicas e hospitais veterinários. O curso também aborda temas como bem-estar animal, nutrição e saúde pública veterinária. Os graduados podem trabalhar em clínicas, hospitais, fazendas, indústrias de alimentos e até em pesquisa científica. 
+ </div>
+    </div>
+
+    <div class="course">
+        <h3>Agronomia</h3>
+        <img src="é o agro.webp" alt="Curso de Agronomia">
+        <p>O curso de Agronomia forma profissionais aptos a atuar na produção agrícola, manejo de recursos naturais e desenvolvimento sustentável do agronegócio.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 5 anos<br>
+            <strong>Custo:</strong> R$ 1.700,00/mês<br>
+            <strong>Informações Adicionais:</strong>O curso de Agronomia forma profissionais aptos a atuar na produção agrícola, manejo de recursos naturais e desenvolvimento sustentável do agronegócio. Os alunos aprendem sobre solo, plantas, clima, técnicas de cultivo e manejo de pragas, além de desenvolver habilidades em gestão e inovação no setor agrícola. O curso inclui experiências práticas em fazendas e laboratórios de análise de solo, preparando os graduados para enfrentar os desafios do agronegócio moderno. Os profissionais podem atuar como agrônomos, consultores, pesquisadores e gestores de propriedades rurais.
+        </div>
+    </div>
+
+    <div class="course">
+        <h3>Biomedicina</h3>
+        <img src="biomedicooooo.jpg" alt="Curso de Biomedicina">
+        <p>O curso de Biomedicina prepara profissionais para atuar em análises clínicas, pesquisa e desenvolvimento de novas tecnologias na área da saúde.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 4 anos<br>
+            <strong>Custo:</strong> R$ 1.900,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Biomedicina prepara profissionais para atuar em análises clínicas, pesquisa e desenvolvimento de novas tecnologias na área da saúde. Os alunos estudam biologia celular, microbiologia, bioquímica e genética, além de desenvolver habilidades práticas em laboratórios de análises. O curso enfatiza a importância da pesquisa científica e da inovação na área da saúde, preparando os graduados para contribuir com diagnósticos e tratamentos. Os profissionais podem trabalhar em laboratórios, hospitais, indústrias farmacêuticas e centros de pesquisa.
+        </div>
+    </div>
+
+    <div class="course">
+        <h3>Fisioterapia</h3>
+        <img src="fisiooooo.jpg" alt="Curso de Fisioterapia">
+        <p>O curso de Fisioterapia forma profissionais para reabilitar e promover a saúde física, utilizando técnicas e métodos de tratamento variados.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 4 anos<br>
+            <strong>Custo:</strong> R$ 1.800,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Fisioterapia forma profissionais para reabilitar e promover a saúde física, utilizando técnicas e métodos de tratamento variados. Os alunos aprendem sobre anatomia, fisiologia, cinesiologia e técnicas de terapia manual, além de desenvolver habilidades práticas em clínicas de fisioterapia. O curso aborda a importância da prevenção de doenças e promoção da saúde, preparando os graduados para atuar em diversas áreas, como ortopedia, neurologia, pediatria e geriatria. Os profissionais podem trabalhar em hospitais, clínicas, academias e consultórios. 
+        </div>
+    </div>
+
+    <div class="course">
+        <h3>Nutrição</h3>
+        <img src="nutri.jpg" alt="Curso de Nutrição">
+        <p>O curso de Nutrição capacita profissionais a atuar na promoção da saúde e prevenção de doenças através da alimentação adequada e saudável.</p>
+        <div class="course-details">
+            <strong>Duração:</strong> 4 anos<br>
+            <strong>Custo:</strong> R$ 1.700,00/mês<br>
+            <strong>Informações Adicionais:</strong> O curso de Nutrição capacita profissionais a promover a saúde e o bem-estar por meio da alimentação adequada e saudável. Os alunos estudam bioquímica, fisiologia, dietética e nutrição clínica, além de desenvolver habilidades práticas em estágios em hospitais e clínicas. O curso aborda temas como nutrição esportiva, saúde pública e educação alimentar, preparando os graduados para atuar em diversas áreas, como nutrição clínica, saúde coletiva e indústria de alimentos.
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    }
+</script>
+</body>
+</html>
